@@ -1,0 +1,9 @@
+body { /* обращаюсь к контейнеру body */
+    background: #d6fffc; /* фон: [цвет] */
+    /* background-image: url("ссылка_на_картинку"); */
+}
+
+td {
+    border: 2px solid red;
+    /* рамки: размер стиль цвет */
+}
