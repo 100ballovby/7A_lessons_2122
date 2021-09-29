@@ -1,0 +1,32 @@
+body {
+    background-image: url('https://klopotenko.com/wp-content/uploads/2018/02/Pasta-iz-fasoli-a-lya-humus_siteWeb.jpg');
+    background-repeat: no-repeat;  /* отключает режим "замостить" */
+    background-size: cover;  /* растягивает на ширину экрана браузера */
+    font-family: sans-serif; /* устанавливаю шрифт без засечек */
+
+    /* сбрасываю стили браузера */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {  /* общая стилизация контейнера */
+    width: 60%;
+    margin: 50px auto;  /* 50 пикселей сверху и снизу, блок посередине */
+    padding: 30px; /* внутренний отступ 30пикс с каждой стороны */
+    border-radius: 1em; /* скругляю углы */
+    font-size: 22px;  /* увеличиваю размер шрифта */
+
+    /* Есть 4 варианта задачи фона блоку/странице:
+     1. Цветовая константа (red, yellow...)
+     2. код цвета в HEX - #a4c523 - лайм
+     3. код цвета в ргб - rgb(255, 255, 255) - белый
+     4. ргб с прозрачностью rgba(23, 5, 45, 0.5) - полупрозрачный зеленый
+     */
+    background: rgba(255, 255, 255, 0.9);
+}
+
+/* стилизую заголовки */
+.main h1, h2 {  /* я стилизую заголовки h1 и h2 ТОЛЬКО внутри контейнера .main */
+    text-align: center;
+}
