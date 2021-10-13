@@ -1,0 +1,31 @@
+.box {
+    background: #8b4242;
+    width: 22%;
+    padding: 4em 0;
+    margin: 1em;
+
+    color: white;
+    text-align: center;
+
+    /* чтобы блочные элементы расположились
+    по горизонтали, пропишем свойство обтекания */
+    float: left;
+
+    /* можно задавать свойство прозрачности */
+    opacity: 0.7; /* прозрачность 30% */
+
+    transition: 0.5s ease-in-out;
+}
+
+.box:hover {
+    opacity: 1;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0 2em;
+
+}
+
+
