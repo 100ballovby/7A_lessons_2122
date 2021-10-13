@@ -21,6 +21,12 @@
     opacity: 1;
 }
 
+/* чтобы отменить float */
+h1 {
+    clear: both; /* отмена обтекания */
+    text-align: center;
+}
+
 .wrapper {
     width: 95%;
     margin: 0 auto;
