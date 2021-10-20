@@ -1,0 +1,63 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container {
+    width: 300px;
+    margin: 10px auto;
+}
+
+.block {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px dashed #ccc;
+    color: #fc5a5a;
+}
+
+.column1 {
+    float: left;
+    width: 120px;
+    min-height: 50px;
+}
+
+.column2 {
+    float: right;
+    width: 120px;
+    min-height: 50px;
+}
+
+.column3 {
+    clear: both; /* отменить действие float со всех сторон */
+    width: 150px;
+    margin: 10px auto;
+    min-height: 50px;
+}
+
+/* ###################### */
+.column4 {
+    float: left;
+    width: 65px;
+    min-height: 50px;
+    margin-right: 9px;
+}
+.column5 {
+    float: left;
+    width: 80px;
+    min-height: 50px;
+}
+.column6 {
+    float: right;
+    width: 65px;
+    min-height: 50px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+
+
+
