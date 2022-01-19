@@ -1,0 +1,66 @@
+.btn {
+    display: inline-block;
+    padding: 1em;
+    margin: 0.5em 0;
+    background: transparent;
+    color: #898989;
+    border: 2px solid #898989;
+    border-radius: 2em;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: all 0.5s ease-in-out;  /* для анимации */
+}
+
+.btn-danger {
+    color: #b50707;
+    border-color: #b50707;
+}
+
+.btn-success {
+    color: #33b211;
+    border-color: #33b211;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background: #33b211;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background: #b50707;
+}
+
+.frame {
+    margin: 1em auto;
+    padding: 2em;
+    width: 50%;
+    max-height: 400px;
+    border: 2px solid #bfbfbf;
+}
+
+.alert {
+    padding: 1em;
+    border: 2px solid #d6e9c6;
+    border-radius: 0.8em;
+    color: #3c763d;
+    background-color: #dff0d8;
+}
+
+.container {
+    width: 40%;
+    max-width: 400px;
+    padding: 2em;
+    margin: 0 auto;
+}
+
+input[type="text"] {  /* все текстовые поля ввода на странице */
+    display: inline-block;
+    padding: 1em;
+    margin: 0.5em 0;
+    border-radius: 2em;
+    outline: none; /* убираем свечение инпута, когда на него нажмут */
+}
+
+
