@@ -1,0 +1,21 @@
+.palette {
+    display: flex; /* резиновая верстка */
+    flex-direction: row; /* все элементы в строчку */
+    flex-wrap: wrap; /* если элемент не помещается в строку, перенести на новую */
+}
+
+.palette-block {
+    padding: 1em;
+    width: 150px;
+    height: 150px;
+    margin: 0.5em 0;
+
+    border: 0.3em solid black;
+}
+
+.palette-block p {
+    background: #636363;
+    font-weight: bold;
+}
+
+
