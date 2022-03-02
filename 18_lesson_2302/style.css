@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+}
+
+.senators {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+
+.senator {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border-radius: 1em;
+    box-shadow: 0.01em 0.01em 0.3em black;
+}
+
+.senator-name {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    color: #313131;
+}

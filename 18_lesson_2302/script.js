@@ -5085,3 +5085,41 @@ let senators = [
             "website": "https://www.warnock.senate.gov"
         }
     ]
+
+
+function show_senators(list) {
+    let section = document.querySelector('.senators')
+    for (let i = 0; i < list.length; i++) {
+        let sen_div = document.createElement('div');
+        sen_div.classList.add('senator')
+
+        let name = document.createElement('h1');
+        name.classList.add('senator-name')
+
+        let address = document.createElement('p');
+        let office = document.createElement('p');
+        let birth_date = document.createElement('p');
+        let link = document.createElement('a');
+
+        if (list[i]['current']) {
+            name.innerHTML = list[i]['person']['name'];
+            sen_div.appendChild(name);
+
+            address.innerHTML = '<b>Address: </b>' + list[i]['extra']['address'];
+            office.innerHTML = '<b>Office: </b>' + list[i]['extra']['office'];
+            birth_date.innerHTML = '<b>Birth date: </b>' + list[i]['person']['birthday'];
+
+            sen_div.appendChild(address);
+            sen_div.appendChild(office);
+            sen_div.appendChild(birth_date);
+
+            link.innerHTML = 'Visit website';
+            link.href = list[i]['website']
+            sen_div.appendChild(link);
+        }
+
+        section.appendChild(sen_div);
+    }
+}
+
+show_senators(senators);
