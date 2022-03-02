@@ -412,5 +412,41 @@ let USA_debt = [
 
 function show_debt(list) {
     let section = document.querySelector('.list');
+
+    for (let i = 0; i < list.length; i++) {  // повторить длина_списка раз
+        let president = document.createElement('div');  // создать div
+
+        let name = document.createElement('h1'); // создать заголовок для имени президента
+        let year = document.createElement('p');  // создать параграф для года правления
+        let party = document.createElement('p');
+        let debt = document.createElement('p');
+
+        name.innerHTML = list[i]['president'];  // добавляю текст из ключа president в имя
+        year.innerHTML = list[i]['year'];  // добавляю текст из ключа year
+        party.innerHTML = list[i]['party'];  // добавляю текст из ключа party
+        debt.innerHTML = list[i]['annual_debt_increase_pct'] * 100 + '%';  // добавляю текст из ключа "annual_debt_increase_pct
+
+        if (list[i]['annual_debt_increase_pct'] > 0) {  // если долг увеличился (больше 0%)
+            debt.style.color = 'red';  // окрашу текст в красный
+        } else {  // иначе
+            debt.style.color = 'green';  // окрашу текст в зеленый
+        }
+
+        if (list[i]['party'] === 'Democratic') {  // если ключ party в объекте имеет значение Democratic
+            president.classList.add('democratic');  // добавить соответствующий класс карточке
+        } else {
+            president.classList.add('republican');
+        }
+
+        president.appendChild(name);  // добавляю имя президента в карточку
+        president.appendChild(year);
+        president.appendChild(party);
+        president.appendChild(debt);
+
+        president.classList.add('president');  // добавить класс .president к div
+        section.appendChild(president); // добавить div в секцию
+    }
 }
+
+show_debt(USA_debt);  // вызываю функцию и передаю ей список объектов
 
