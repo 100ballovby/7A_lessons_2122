@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.president {
+    /* допиши мои стили */
+}
+
+.democratic {
+    border-color: #1F9FF2;
+}
+
+.republican {
+    border-color: #DE0100;
+}
