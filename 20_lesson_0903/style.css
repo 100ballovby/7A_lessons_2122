@@ -1,0 +1,17 @@
+.table {
+    margin: 0 auto;
+    border-collapse: collapse;  /* убирает отступы между ячеек */
+}
+
+td, th {
+    border-bottom: 2px solid #7545e5;  /* border можно указывать с одной стороны */
+    padding: 1em;
+}
+
+tr:nth-child(odd) {  /* ВСЕ нечетные строки таблицы */
+    background: #ebebeb;
+}
+
+tr:nth-child(even) { /* ВСЕ четные строки таблицы  */
+    background: #ffffff;
+}

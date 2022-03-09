@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+}
+
+.currency {
+    font-weight: bold; /* жирный шрифт */
+    background: #1795d9;
+    color: #fff;
+    border-radius: 2em;
+    padding: 0.5em;
+    display: inline-block;
+}
+
+
+
