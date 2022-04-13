@@ -1,0 +1,56 @@
+form {
+    width: 40%;
+    padding: 1em;
+    border: 0.3em solid #45b0de;
+    border-radius: 2em;
+}
+
+fieldset {
+    padding: 1em;
+    border: 0.3em solid #45b0de;
+    border-radius: 2em;
+}
+
+legend {
+    background: #45b0de;
+    padding: 1em;
+    color: #fff;
+    border-radius: 2em;
+}
+
+input[type=text],
+input[type=password] { /* стилизуем оба типа полей */
+    width: 80%;
+    padding: 0.4em;
+    border-radius: 2em;
+    font-size: 1.5em;
+}
+
+label {
+    font-size: 1.5em;
+    color: #434343;
+}
+
+.btn {
+    display: block;
+    width: 80%;
+    margin: 0.5em auto;
+    padding: 0.5em;
+    border-radius: 2em;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn-send {
+    border-color: #37a43b;
+    background: #37a43b;
+    color: #fff;
+}
+
+.btn-reset {
+    border-color: #f9c92d;
+    background: #f9c92d;
+    color: #fff;
+}
+
+

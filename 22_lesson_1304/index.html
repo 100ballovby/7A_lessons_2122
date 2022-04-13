@@ -7,5 +7,35 @@
 </head>
 <body>
 
+<form action="" method="post">
+    <fieldset> <!-- группа полей -->
+        <legend>Контактные данные</legend>  <!-- подпись к группе полей-->
+
+        <label for="name">Имя пользователя</label><br>  <!-- подпись к полю -->
+        <input type="text" id="name">  <!-- поле -->
+        <hr>  <!-- горизонтальный разделитель -->
+        <label for="password">Пароль:</label><br>  <!-- подпись к полю -->
+        <input type="password" id="password">  <!-- поле -->
+    </fieldset>
+
+    <fieldset>
+        <legend>Функции и дата</legend>
+
+        <label for="date">Дата:</label>
+        <input type="date" id="date">
+        <hr>
+
+        <input type="radio" id="del" name="delivery"> <label for="del">Доставка</label><br>
+        <input type="radio" id="f-del" name="delivery"> <label for="f-del">Быстрая доставка</label><br>
+        <input type="radio" id="self" name="delivery"> <label for="self">Самовывоз</label><br>
+
+    </fieldset>
+
+    <input type="submit" class="btn btn-send" value="Отправить">
+    <!-- type submit - делает кнопку
+    value - текст на кнопке -->
+    <input type="reset" class="btn btn-reset" value="Сброс">
+</form>
+
 </body>
 </html>
