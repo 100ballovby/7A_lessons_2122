@@ -26,6 +26,37 @@
     </fieldset>
     <fieldset>
         <legend>Выбор функций</legend>
+        <div class="wrapper">
+            <label for="color">Выберите цвет:</label>
+            <select name="color" id="color">
+                <option value="black">Черный</option>
+                <option value="white">Белый</option>
+                <option value="red">Красный</option>
+                <option value="purple">Фиолетовый</option>
+            </select>
+        </div>
+        <div class="wrapper">
+            <label for="boxes">Нужны ли ящики?</label>
+            <select name="boxes" id="boxes">
+                <option value="yes">Да</option>
+                <option value="no">Нет</option>
+            </select>
+        </div>
+    </fieldset>
+    <fieldset>
+        <legend>Дата и время</legend>
+        <div class="wrapper">
+            <label for="order-date">Дата доставки</label>
+            <input type="date" id="order-date" name="order">
+        </div>
+        <div class="wrapper">
+            <label for="order-time">Время доставки</label>
+            <input type="time" id="order-time" name="time">
+        </div>
+        <div class="wrapper">
+            <label for="quantity">Количество</label>
+            <input type="number" min="1" max="5" step="1" id="quantity" name="quantity">
+        </div>
     </fieldset>
 </form>
 
