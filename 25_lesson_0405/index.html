@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<h3>Please, login</h3>
+<form action="" class="login-form" method="post">
+    <div class="wrapper">
+        <label for="login" class="form-label">Login:</label>
+        <input type="text" id="login" class="form-control">
+    </div>
+    <div class="wrapper">
+        <label for="passw" class="form-label">Password:</label>
+        <input type="password" id="passw" class="form-control">
+        <img src="Eye.png" alt="" id="eye" onclick="show_password()">
+    </div>
+    <div class="wrapper">
+        <label for="remember" class="form-label">
+            <input type="checkbox" class="form-check" id="remember"> Remember me
+        </label>
+    </div>
+    <div class="wrapper">
+        <input type="submit"  value="Login" class="btn btn-success">
+    </div>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
